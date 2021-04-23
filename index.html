@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./contact-input.css" />
+  </head>
+  <body>
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form
+      action="https://formspree.io/f/moqyvrqz"
+      method="POST"
+      id="contact-form"
+    >
+      <h1 class="contact-heading">Contact Me</h1>
+      <!-- Name -->
+      <div class="contact-info">
+        <label for="name" class="contact-label"> You Name: </label>
+        <input
+          type="txt"
+          name="name"
+          id="name"
+          placeholder="Full name"
+          required
+          class="contact-input"
+        />
+      </div>
+      <!-- Email -->
+      <div class="contact-info">
+        <label for="email" class="contact-label"> Your email: </label>
+        <input
+          class="contact-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@domain.com"
+          required
+        />
+      </div>
+      <!-- Number -->
+      <div class="contact-info">
+        <label for="phone" class="contact-label"> Your Number: </label>
+        <input
+          class="contact-input"
+          type="tel"
+          name="number"
+          id="number"
+          placeholder="0212345678"
+          required
+        />
+      </div>
+      <!-- Message -->
+      <div class="contact-info">
+        <label for="message" class="contact-label"> Your message: </label>
+
+        <textarea
+          class="contact-input"
+          name="message"
+          id="message"
+          placeholder="Your message"
+        ></textarea>
+      </div>
+
+      <!-- your other form fields go here -->
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
